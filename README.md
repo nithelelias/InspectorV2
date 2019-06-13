@@ -130,12 +130,6 @@ Sobre la consola js puedes ir agregando colores y automaticamente aparecera un n
 <include src="somefile.html" onload="jsmethodcallback()">   ... LOADING </include>
 ```
 
-
-### Examples:
- A list with some examples i will be adding more
- [Examples](examples/README.md)
-
-
  ### Methods:
 
  * **add** : Agrega componente.
