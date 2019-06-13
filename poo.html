@@ -1,0 +1,29 @@
+<div >
+    <div> nombres {{this.name+" - " +this.lastname}}</div>
+    <div html="this.name+' '+this.lastname" style="color:red;"></div>
+
+    <input type="text" model="this.name">
+    <input type="text" onInput="this.setInput(evt)" placeholder="prueba aqui">
+    <button onclick="this.test()">test buton</button>
+    <br>
+    <div onmouseover="this.onover()" onmouseout="this.onout()" style="width:300px;height:30px;border:thin solid;">
+        MOUSE OVER? {{this.isover}}
+    </div>
+    <p>
+        {{this.dirty==1?"-":"|"}}
+    </p>
+    <br>
+    <div>
+        <label>
+            CHECK is {{this.checkme!=null?"checked":"nochecked"}}
+            <input type="checkbox" model="this.checkme" value="uno"></label>
+    </div>
+    <div>
+        <span> {{this.born}} &nbsp; - &nbsp;<b>{{this.age}} &nbsp;{{this.labels.years}}</b> </span>
+    </div>
+    <div>
+        <label>1 - <input type="radio" value="1" model="this.radiome" name="groupito"></label>
+        <label>2 - <input type="radio" value="2" model="this.radiome" name="groupito"></label>
+        <label>3 - <input type="radio" value="3" model="this.radiome" name="groupito"></label>
+    </div>
+</div>
